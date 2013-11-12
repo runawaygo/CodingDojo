@@ -9,7 +9,8 @@ test:
 		$(MOCHA_OPTS) \
 		$(TESTS) 
 
-test-xunit-file:
+test-xunit:
+	git checkout ${BRANCH} & git rebase
 	@NODE_ENV=test ./node_modules/mocha/bin/mocha \
 		--compilers coffee:coffee-script \
 		--reporter  xunit-file \
