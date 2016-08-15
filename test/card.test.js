@@ -15,7 +15,7 @@ describe("Card", function(){
   })
 
   it("2Pair",function(){
-    var card = new Card([11,11,4,4,2])
+    var card = new Card([11,11,4,4,1])
     
     expect(card.level()).to.be.equal(2)
     expect(card.cards).to.be.eql([1,4,4,11,11])
