@@ -1,3 +1,4 @@
 xunit.xml
 dump.rdb
 node_modules
+package-lock.json
