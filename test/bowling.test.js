@@ -2,7 +2,7 @@ require("mocha")
 var expect = require("chai").expect
 var _ = require("lodash")
 
-describe.only("Bowling", function(){
+describe("Bowling", function(){
   var Bowling = require("../src/bowling")
   it("Normal", function(){
     const bowling = new Bowling()

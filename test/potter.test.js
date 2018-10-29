@@ -4,7 +4,7 @@ var _ = require("lodash")
 
 var potter = require("../src/potter")
 
-describe.only("Potter", function(){
+describe("Potter", function(){
   it("Should give 8 if buy one book", function(){
     var result = potter.cal(1)
     expect(result).eql(8)

@@ -17,15 +17,16 @@ class BowlingSM {
 
   bThrow(throws){
     for(let i = 0;i<throws.length;i++){
-      // console.log(this.currentFrameIndex)
-      // console.log(i)
+      
+      
       this.throw(throws[i])
     }
   }
 
   throw(t){
-    // console.log(this.action)
+    
     this.action = this.action(t)
+    return this
   }
 
   firstThrow(t){
@@ -148,8 +149,8 @@ class Bowling {
 
   bThrow(throws){
     for(let i = 0;i<throws.length;i++){
-      console.log(i, throws[i])
-      console.log(this.frames)
+      
+      
       this.throw(throws[i])
     }
   }
@@ -165,7 +166,7 @@ class Bowling {
       this.frames.push(new Frame())
     }
 
-    // console.log(this.action)
+    
     
   }
 }
