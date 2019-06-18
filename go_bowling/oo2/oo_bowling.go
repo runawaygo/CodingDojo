@@ -65,10 +65,8 @@ func (this *Frame) afterStrikeThrow2(n int) interface{}{
 
 type Game struct {
 	score        	int
-	turns        	int
 	currentFrameIndex int
 	isEnd        	bool
-	throwHandler 	func(int) interface{}
 	frames 			[]*Frame
 }
 
@@ -85,11 +83,6 @@ func BuildNewGame() *Game{
 	return game
 }
 func (this *Game) Throw(n int) *Game{
-	// println(this.currentFrameIndex)
-	// println(this.score)
-	// println(n)
-	// println("*************")
-
 	for i := this.currentFrameIndex;i>=0;i--{
 		if this.frames[i].state == 0 {
 			continue
