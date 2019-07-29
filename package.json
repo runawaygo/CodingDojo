@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "chai": "~1.8.0",
-    "lodash": "^3.10.1",
+    "lodash": "^4.17.15",
     "sinon": "~1.7.3",
     "thenjs": "^2.0.1"
   },
